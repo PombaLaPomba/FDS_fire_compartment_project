@@ -1,0 +1,12 @@
+# Ignore bulky FDS simulation outputs
+*.s3d
+*.smv
+*.bf
+*.prt
+*.sz
+*.pa
+
+# Ensure inputs are always tracked
+!*.fds
+!*.csv
+!*.out
