@@ -237,15 +237,24 @@
 
 !-------------------------------------------------------------------------------------!
 ! Fuel definition:
-!   35 wt.% n-Heptane          C7H16      dHc = 4816.19 kJ/mol    M = 100.2019 g/mol
-!   15 wt.% 2-Methylhexane     C7H16      dHc = 4811.50 kJ/mol    M = 100.2019 g/mol
-!   45 wt.% Methylcyclohexane  C7H14      dHc = 4565.29 kJ/mol    M =  98.1861 g/mol
-!   5 wt.% Toluene             C7H8       dHc = 3910.90 kJ/mol    M =  92.1384 g/mol
+!   n-alkanes: approximately 35 wt.% (predominantly n-heptane)
+!   iso-alkanes: approximately 15 wt.%
+!   cyclic alkanes (naphthenes): approximately 45 wt.% (predominantly methylcyclohexane and cyclohexane)
+!   aromatic content: very low
 !
-!   All from Nist :3
 !
+!   35 wt.% n-Heptane          C7H16      dHt = 44600. kJ/kg    M = 100. g/mol      co = 0.012        soot = 0.042
+!   15 wt.% 2-Methylhexane     C7H16      dHt = 44600. kJ/kg    M = 100. g/mol      co = 0.012        soot = 0.037 
+!   45 wt.% Methylcyclohexane  C7H14      dHt = 43400. kJ/kg    M =  98. g/mol      co = 0.018        soot = 0.054
+!   5 wt.% Toluene             C7H8       dHt = 39700. kJ/kg     M =  92. g/mol     co = 0.064        soot = 0.173
+!
+!   All from the FE handbook
+!
+! Averaged values:
 ! Mass-weighted specific heat of combustion: 47071 kJ/kg
 ! Mole-weighted average lumped formula:      C7 H14.66  (M_avg = 98.86 g/mol)
+! Soot yiel:      
+! CO yield:       
 !-------------------------------------------------------------------------------------!
 &REAC ID='HEPTAN_SURROGATE',
       FUEL='HEPTAN_SURROGATE',
